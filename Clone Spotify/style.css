@@ -1,0 +1,437 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* color: wheat; */
+
+}
+
+:root {
+    --black-bg: #000000;
+    --gray-bg: rgb(26, 26, 26);
+    --white-bg: white;
+    --lightgray-bg: rgb(15, 15, 15);
+    --gray-text: rgb(104, 102, 102);
+    --white-text: white;
+    --black-text: black;
+    --card-bg : rgb(40 39 39);
+
+}
+
+body {
+    background-color: var(--black-bg);
+    /* color: white; */
+}
+.header{
+    position: sticky;
+    top: 0;
+    background-color: var(--black-bg);
+    z-index: 10;
+}
+
+.header img {
+    width: 35px;
+    margin: 0 5px;
+} 
+
+.leftHeader {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    padding: 0 20px;
+
+
+}
+.home, .search{
+    background-color: #c9c7c7;
+    border-radius: 40px;
+}
+.home img, .search img{
+    width: 25px;
+    padding: 5px;
+}
+
+.rightHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+        width: 490px;
+
+}
+
+.rightHeader ul {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    align-items: center;
+}
+.leftBtns{
+    padding: 0 15px;
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    align-items: center;
+}
+.rightBtns{
+    padding: 0 15px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+.left {
+    width: 30vw;
+    height: 100vh;
+    margin: 5px;
+    position: static;
+}
+
+.right {
+    width: 70vw;
+    margin: 5px;
+    position: relative;
+}
+
+.library {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.library button {
+    /* width: 130px; */
+    border: none;
+    padding: 12px;
+    border-radius: 20px;
+}
+
+.createBox {
+    margin: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.createBox button {
+    width: 130px;
+    height: 35px;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+/* .left .morelinks ul{
+    display: flex;
+    list-style: none;
+    gap: 5px;
+    margin: 20px;
+} */
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 38px 15px;
+    /* height: 100px; */
+    font-size: 14px;
+    list-style: none;
+}
+
+
+
+.trending,
+.popularArtist,
+.popularAlbum,
+.popularRadio,
+.featureCharts {
+    display: flex;
+    padding: 24px 35px;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+    color: var(--white-text);
+    
+}
+
+a {
+    text-decoration: none;
+    color: var(--gray-text);
+}
+
+
+.cardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 20px;
+    max-height: 70vh;
+    overflow-y: scroll;
+    
+}
+.tbox,
+.artistBox,
+.pAlbumBox,
+.pRadioBox,
+.updatesBox {
+    height: 240px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background: transparent;
+    margin: 10px;
+    background-color:var(--card-bg);
+    padding: 3px;
+    border-radius: 5px;
+    transition: all 1s;
+
+}
+.tbox:hover{
+    background-color: #3d3d3d;
+}
+
+
+.tbox img {
+    width: 100%;
+    /* height: 60%; */
+    margin: auto;
+    object-fit: contain;
+
+}
+
+.tbox .songName,
+.artistName,
+.albumName,
+.updates {
+    font-size: 20px;
+    color: var(--white-text);
+}
+
+.tbox .singersName,
+.artist {
+    font-size: 12px;
+    color: var(--gray-text);
+}
+
+.artistBox img {
+    border-radius: 100px;
+
+}
+
+
+.links {
+    color: var(--white-text);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: (4, 1fr);
+    grid-template-areas:
+        
+        "a b c d";
+
+}
+
+#header {
+    font-weight: bold;
+}
+
+.g1 {
+    grid-area: a;
+}
+
+.g2 {
+    grid-area: b;
+}
+
+.g3 {
+    grid-area: c;
+}
+
+.g4 {
+    grid-area: d;
+}
+
+.links-group ul{
+    list-style: none;
+    
+}
+
+.libContainer{
+    display: flex;
+    flex-direction: column;
+    /* overflow-y: scroll; */
+    /* max-height: 190px; */
+}
+.language{
+    padding: 10px;
+}
+.rightHeaderBtn{
+    background-color: transparent;
+    border: none;
+    color: var(--gray-text);
+    cursor: pointer;
+}
+.rightHeaderBtn:hover{
+    color: white;
+    font-size: 15px;
+}
+
+
+.playbar{
+    position: fixed;
+    bottom: 20px;
+    right: 5px;
+    width: 68vw;
+    height: 66px;
+    background-color: rgb(87, 88, 88);
+    border-radius: 8px;
+}
+.songsButtons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 15px;
+}
+
+.songsList{
+    color: var(--white-text);
+    padding: 5px 10px;
+    /* background-color: var(--card-bg);
+    border: 2px solid rgb(136, 134, 134);
+    margin: 4px 24px; */
+    max-height: 300px;
+    overflow: scroll;
+}
+
+.songsList ul li{
+    list-style-type: none;
+}
+
+.listSongsCard{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid rgb(155, 154, 154);
+    padding: 5px;
+    margin: 10px 0px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.playnow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.seekBar{
+    height: 4px;
+    background-color: white;
+    margin: 5px 10px;
+    cursor: pointer;
+    width: 97%;
+    position: absolute;
+    bottom: 5px;
+    /* right: 5px; */
+    border-radius: 5px;
+}
+
+.circle{
+    height: 12px;
+    width: 12px;
+    background-color: white;
+    border-radius: 80px;
+    position: relative;
+    left: 0;
+    bottom: 5px;
+    transition: left 0.5s ;
+}
+
+#play, #next, #previous{
+        cursor: pointer;
+
+}
+
+.upperBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.songInfo{
+    color: white;
+    padding: 0 10px;
+    font-size: 15px;
+    width: 312px;
+}
+
+.songTime{
+    color: white;
+    padding: 0 10px;
+}
+
+.timeVol{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.volume{
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding-right: 18px;
+}
+
+.libraryDrawr{
+    display: none;
+}
+
+.close{
+   width: 30px;
+   padding: 5px;
+   cursor: pointer;
+   display: none;
+}
+
+
+
+
+@media (max-width : 1300px) {
+    .left{
+        position: absolute;
+        left: -200%;
+        transition: all 1s;
+        z-index: 11;
+        width: 360px;
+        background-color: black;
+    }
+    .right{
+        width: 100%;
+    }
+    .playbar{
+        width: 100%;
+    }
+
+    
+
+    .libraryDrawr{
+    display: block;
+    cursor: pointer;
+    }
+
+    .close{
+        display: block;
+    }
+
+
+}

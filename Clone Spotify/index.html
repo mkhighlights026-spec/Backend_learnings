@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utilites.css">
+</head>
+
+<body>
+    <div class="header ">
+        <div class="leftHeader invert">
+            <div class="logo">
+                <img src="svg/logo.svg" alt="Logo">
+            </div>
+            <div class="home">
+                <img src="svg/home.svg" alt="home">
+            </div>
+            <div class="search">
+                <img src="svg/search.svg" alt="Search">
+            </div>
+            <div class="libraryDrawr">
+                <img src="svg/library.svg" alt="">
+            </div>
+        </div>
+        <div class="rightHeader  graytext">
+            <div class="leftBtns">
+                <ul>
+                    <li><button class="rightHeaderBtn">Premium</button></li>
+                    <li><button class="rightHeaderBtn">Support</button></li>
+                    <li><button class="rightHeaderBtn">Download</button></li>
+                </ul>
+            </div>
+            <div class="rightBtns">
+                <ul>
+                    <li><button class="rightHeaderBtn">Install app</button></li>
+                    <li><button class="rightHeaderBtn">Sign up</button></li>
+                    <li class="whiteButton">log in</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container flex">
+        <div class="left bg-lightgray rounded">
+            <img class="close invert" src="svg/close.svg" alt="">
+            <div class="library whitetext">
+                <h3>Your Library</h3>
+                <button class="whiteButton">+ Create</button>
+            </div>
+            <div class="songsList">
+                <ul>
+
+                </ul>
+            </div>
+            <div class="libContainer">
+                <div class="playlist createBox bg-gray rounded whitetext">
+                    <h4>Create your first playlist</h4>
+                    <h5>it's easy, we'll help you</h5>
+                    <button>Create Playlist</button>
+                </div>
+                <div class="podcast createBox bg-gray rounded whitetext">
+                    <h4>Lets find some pordcasts to follow</h4>
+                    <h5>we'll keep you updated on new episodes</h5>
+                    <button>Browes pordcast</button>
+                </div>
+            </div>
+            <div class="moreLinks">
+                <ul class="list">
+                    <li><a href="https://www.spotify.com/pk-en/legal/">Legal</a></li>
+                    <li><a href="https://www.spotify.com/pk-en/safetyandprivacy/">Safety &amp; Privacy Center</a></li>
+                    <li><a href="https://www.spotify.com/pk-en/legal/privacy-policy/">Privacy Policy</a></li>
+                    <li><a href="https://www.spotify.com/pk-en/legal/cookies-policy/">Cookies</a></li>
+                    <li><a href="https://www.spotify.com/pk-en/legal/privacy-policy/#s3">About Ads</a></li>
+                    <li><a href="https://www.spotify.com/pk-en/accessibility/">Accessibility</a></li>
+                </ul>
+            </div>
+            <div class="language">
+                <button class="blackButton">English</button>
+            </div>
+        </div>
+        <div class="right border bg-gray rounded">
+            <section class="sec1 sec-margin">
+                <div class="trending">
+                    <h2>Trending songs</h2>
+                    <a href="">show all</a>
+                </div>
+                <div class="cardContainer ">
+                    <div data-folder="Mix" class="tbox ">
+                        <img src="https://i.scdn.co/image/ab67616d00001e02a5f7818cd1951c5742e8277a" alt="">
+                        <span class="songName">Tera Mara Reshta New Version</span>
+                        <span class="singersNmame">
+                            <a href="">Mithoon,</a>
+                            <a href="">Pritam,</a>
+                            <a href="">Mustafa Zahid,</a>
+                        </span>
+                    </div>
+                    <div data-folder="Mix" class="tbox ">
+                        <img src="https://i.scdn.co/image/ab67616d00001e02a5f7818cd1951c5742e8277a" alt="">
+                        <span class="songName">Tera Mara Reshta New Version</span>
+                        <span class="singersNmame">
+                            <a href="">Mithoon,</a>
+                            <a href="">Pritam,</a>
+                            <a href="">Mustafa Zahid,</a>
+                        </span>
+                    </div>
+                </div>
+                <div class="playbar">
+                    <div class="seekBar">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="upperBar">
+                        <div class="songInfo"></div>
+                        <div class="songsButtons invert">
+                            <img id="previous" src="svg/prevsong.svg" alt="">
+                            <img id="play" src="svg/play.svg" alt="">
+                            <img id="next" src="svg/nextsong.svg" alt="">
+                        </div>
+                        <div class="timeVol">
+                            <div class="songTime"></div>
+                            <div class="volume">
+                                <img class="invert  " src="svg/volume.svg" alt="">
+                                <div class="range">
+                                    <input type="range" name="volume">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- <section class="sec2 sec-margin">
+                <div class="popularArtist ">
+                    <h2>Populer Artist</h2>
+                    <a href="">show all</a>
+                </div>
+                <div class="artistBox">
+                    <img src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca" alt="">
+                    <span class="artistName">Pritam</span>
+                    <span class="artist">Artist</span>
+                </div>
+            </section>
+            <section class="sec3 sec-margin">
+                <div class="popularAlbum">
+                    <h2>Popular albums and singles</h2>
+                    <a href="">show all</a>
+                </div>
+                <div class="pAlbumBox">
+                    <img src="https://i.scdn.co/image/ab67616d00001e0285c5968be0d0d9c545241124" alt="">
+                    <span class="albumName">Pal Pal</span>
+                    <span class="albumBy">
+                        <a href="">Afusic,</a>
+                        <a href="">AliSoomroMusic,</a>
+                    </span>
+                </div>
+            </section>
+            <section class="sec4 sec-margin">
+                <div class="popularRadio">
+                    <h2>Popular radio</h2>
+                    <a href="">show all</a>
+                </div>
+                <div class="pRadioBox">
+                    <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/4YRxDV8wJFPHPTeXepOstw/en"
+                        alt="">
+                    <span class="radioWith">
+                        <a href="">pritam,</a>
+                        <a href="">Shaarib toshi,</a>
+                        <a href="">Sachet tandon,</a>
+                    </span>
+                </div>
+            </section>
+            <section class="sec5 sec-margin">
+                <div class="featureCharts">
+                    <h2>Feature Charts</h2>
+                    <a href="">show all</a>
+                </div>
+                <div class="updatesBox">
+                    <img src="https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_global_default.jpg"
+                        alt="">
+                    <span class="updates">
+                        <a href="">your weekly updates of the most played</a>
+                    </span>
+                </div>
+            </section>
+            <section class="footerLinks">
+                <div class="divider">sjhdbcwyigb</div>
+                <div class="links">
+                    <div class="links-group g1">
+                        <h4>Company</h4>
+                        <ul>
+                            <li>
+                                <a href="https://www.spotify.com/pk-en/about-us/contact/">
+                                    About
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.lifeatspotify.com/">
+                                    Jobs
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://newsroom.spotify.com/">
+                                    For the Record
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="links-group g2">
+                        <h4>Communities</h4>
+                        <ul>
+                            <li>
+                                <a href="https://artists.spotify.com/">
+                                    For Artists
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://developer.spotify.com/">
+                                    Developers
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://ads.spotify.com/">
+                                    Advertising
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://investors.spotify.com/">
+                                    Investors
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://spotifyforvendors.com/">
+                                    Vendors
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="links-group g3">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li>
+                                <a href="https://support.spotify.com/">
+                                    Support
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.spotify.com/pk-en/free/">
+                                    Free Mobile App
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/popular-in/pk">
+                                    Popular by Country
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://open.spotify.com/playlist/37i9dQZF1CLcTo7UzL0sYK">
+                                    Top Song Lyrics
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.spotify.com/pk-en/import-music/">
+                                    Import your music
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="links-group g4">
+                        <h4>Spotify Plans</h4>
+                        <ul>
+                            <li>
+                                <a href="https://www.spotify.com/pk-en/premium/#plans">
+                                    Premium Individual
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.spotify.com/pk-en/duo/#ref=spotifycom_footer_premium_duo">
+                                    Premium Duo
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.spotify.com/pk-en/family/#ref=spotifycom_footer_premium_family">
+                                    Premium Family
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.spotify.com/pk-en/student/#ref=spotifycom_footer_premium_student">
+                                    Premium Student
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.spotify.com/pk-en/free/#ref=spotifycom_footer_free">
+                                    Spotify Free
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="social-container">
+
+                        <a href="https://instagram.com/spotify" title="Instagram" target="_blank"
+                            rel="noopener noreferrer" aria-label="Instagram">
+                            Instagram
+                        </a>
+
+                        <a href="https://x.com/spotify" title="X" target="_blank" rel="noopener noreferrer"
+                            aria-label="X">
+                            X
+                        </a>
+
+                        <a href="https://www.facebook.com/Spotify" title="Facebook" target="_blank"
+                            rel="noopener noreferrer" aria-label="Facebook">
+                            Facebook
+                        </a>
+
+                    </div>
+
+
+
+                    <div class="copyright">
+                        <span>© 2026 Spotify AB</span>
+                    </div>
+                </div>
+
+            </section> -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
