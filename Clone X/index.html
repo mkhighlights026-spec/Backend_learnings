@@ -11,18 +11,19 @@
 
 <body class="bg-black text-white">
     <div class="md:container flex m-auto">
-        <div class="first w-25 md:w-[50%]">
-            <div class="logo invert px-5 py-3">
-                <svg viewBox="0 0 24 24" aria-hidden="true"
-                    class="w-8 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-lrsllp r-18jsvk2 r-16y2uox r-8kz0gk">
-                    <g>
-                        <path
-                            d="M21.742 21.75l-7.563-11.179 7.056-8.321h-2.456l-5.691 6.714-4.54-6.714H2.359l7.29 10.776L2.25 21.75h2.456l6.035-7.118 4.818 7.118h6.191-.008zM7.739 3.818L18.81 20.182h-2.447L5.29 3.818h2.447z">
-                        </path>
-                    </g>
-                </svg>
-            </div>
-            <div class="sidebar">
+        <div class="first w-25 md:w-[50%] ">
+
+            <div class="sidebar sticky top-0">
+                <div class="logo invert px-5 py-3 ">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"
+                        class="w-8 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-lrsllp r-18jsvk2 r-16y2uox r-8kz0gk">
+                        <g>
+                            <path
+                                d="M21.742 21.75l-7.563-11.179 7.056-8.321h-2.456l-5.691 6.714-4.54-6.714H2.359l7.29 10.776L2.25 21.75h2.456l6.035-7.118 4.818 7.118h6.191-.008zM7.739 3.818L18.81 20.182h-2.447L5.29 3.818h2.447z">
+                            </path>
+                        </g>
+                    </svg>
+                </div>
                 <ul class="flex flex-col text-xl space-y-3">
                     <li
                         class="flex items-center justify-start px-5 py-1 gap-3 hover:bg-gray-800 cursor-pointer w-fit rounded-3xl ">
@@ -52,18 +53,21 @@
                         class="flex items-center justify-start px-5 gap-3 py-1 hover:bg-gray-800 cursor-pointer w-fit rounded-3xl">
                         <img src="svg/more_horiz.svg" alt=""> <span class="hidden md:block"> More</span>
                     </li>
-                    
                 </ul>
+                <button
+                    class="bg-white text-black font-bold text-[18px] w-[85%] m-2 p-3 rounded-full hover:bg-[#949798] hidden md:block">Post</button>
             </div>
         </div>
-        <div class="second bg-red-6000 w-full border-[1px] border-x-gray-500 border-y-black"> <span class="hidden md:block"> </span>
-            <div class="top flex relative">
+        <div class="second bg-red-6000 w-full border-[1px] border-x-gray-800 border-y-black"> <span
+                class="hidden md:block"> </span>
+            <div class="top flex relative ">
                 <div class="absolute bg-blue-600 h-1 w-16 bottom-0 left-[17%] rounded-full z-10"></div>
-                <div class="left w-1/2 flex items-center justify-center hover:bg-gray-900">For you</div>
-                <div class="right w-1/2 flex items-center justify-center hover:bg-gray-900">Following</div>
-                <div class="addBtn"><img class="w-[35px] p-[5px] hover:bg-gray-900" src="svg/top_add.svg" alt=""></div>
+                <div class="left w-1/2 flex items-center justify-center hover:bg-gray-900 py-3">For you</div>
+                <div class="right w-1/2 flex items-center justify-center hover:bg-gray-900 py-3">Following</div>
+                <div class="addBtn"><img class="w-[35px] p-[5px] py-3 hover:bg-gray-900" src="svg/top_add.svg" alt="">
+                </div>
             </div>
-            <div class="line bg-gray-500 h-[1px] w-full"></div>
+            <div class="line bg-gray-800 h-[1px] w-full"></div>
             <div class="whatishapp flex flex-col gap-1 space-y-1">
                 <div class="upper flex gap-1 my-2">
                     <div class="img m-1">
@@ -82,23 +86,30 @@
                         <img class="w-7 cursor-pointer hover:w-8" src="svg/calendar_clock.svg" alt="">
                         <img class="w-7 cursor-pointer hover:w-8" src="svg/flag.svg" alt="">
                     </div>
-                    <button class="bg-white font-bold text-black py-1 px-3 rounded-full">Post</button>
+                    <button class="bg-[#3c3d3d] font-bold text-black py-2 px-5 rounded-full ">Post</button>
                 </div>
-                <div class="line bg-gray-500 h-[1px] w-full"></div>
+                <div class="line bg-gray-800 h-[1px] w-full"></div>
                 <div class="posts">
                     <div class="post flex gap-4">
                         <div class="img ">
-                            <img class=" w-12 m-2"
-                                src="https://pbs.twimg.com/profile_images/2031956885600157700/4iWsUjas_normal.jpg"
+                            <img class=" w-20 rounded-full m-2"
+                                src="https://pbs.twimg.com/profile_images/1604937344125116458/_MWMiVRy_normal.jpg"
                                 alt="">
                         </div>
                         <div class="content px-3">
-                            <span class="font-bold text-white ">Travala </span><span
-                                class="text-gray-500">@travalacom</span>
-                            <div class="text-gray-100">Book 2.2M+ Hotels With Crypto</div>
+                            <span class="font-bold text-white "> Vladimir Bayandin </span><span
+                                class="text-gray-500">@vovudebosh</span>
+                            <div class="text-gray-100">my product works. people who try it like it.
+
+                                the problem was never the product — nobody's selling it.
+
+                                gave Explee the link. it found the buyers and emailed them for me.
+
+                                turns out the fix was just doing the selling.
+
+                                try it free — $30 credits 👇</div>
                             <div class="postimg">
-                                <img class="py-3 px-1 rounded-3xl"
-                                    src="https://pbs.twimg.com/media/HNEcQuVa8AA6AIn?format=jpg&name=small" alt="">
+                                <!-- <video src="blob:https://x.com/38ba957a-b933-4311-876a-f7a2f948fd0e"></video> -->
                             </div>
                             <div class="flex justify-between">
                                 <div class="postIcons flex justify-start items-center gap-10">
@@ -125,10 +136,10 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                     </div>
-                    
-            <div class="line bg-gray-500 h-[1px] w-full my-3"></div>
+
+                    <div class="line bg-gray-800 h-[1px] w-full my-3"></div>
                     <div class="post flex gap-4">
                         <div class="img ">
                             <img class=" w-12 m-2"
@@ -168,43 +179,90 @@
                                 </div>
                             </div>
                         </div>
+
                     </div>
+
+                    <div class="line bg-gray-800 h-[1px] w-full my-3"></div>
+                    <div class="post flex gap-4">
+                        <div class="img ">
+                            <img class=" w-12 m-2 rounded-full"
+                                src="https://pbs.twimg.com/profile_images/2085486232214126592/Qnhy13rv_normal.jpg "
+                                alt="">
+                        </div>
+                        <div class="content px-3">
+                            <span class="font-bold text-white ">Parody Elon Musk </span><span
+                                class="text-gray-500">@HonestTakesX</span>
+                            <div class="text-gray-100">If you solve this, your IQ is above average. So, can you solve
+                                it?</div>
+                            <div class="postimg">
+                                <img class="py-3 px-1 rounded-3xl"
+                                    src="https://pbs.twimg.com/media/HRJt8uGW8AAAJ_K?format=jpg&name=small" alt="">
+                            </div>
+                            <div class="flex justify-between">
+                                <div class="postIcons flex justify-start items-center gap-10">
+                                    <span class="flex text-gray-400 text-[15px] gap-1 cursor-pointer"><img
+                                            class="w-[18px] hover:bg-gray-800 hover:rounded-full" src="svg/comment.svg"
+                                            alt="">105</span>
+                                    <span class="flex text-gray-400 text-[15px] gap-1 cursor-pointer"><img
+                                            class="w-[18px] hover:bg-gray-800 hover:rounded-full" src="svg/repeat.svg"
+                                            alt="">248</span>
+                                    <span class="flex text-gray-400 text-[15px] gap-1 cursor-pointer"><img
+                                            class="w-[18px] hover:bg-gray-800 hover:rounded-full" src="svg/favorite.svg"
+                                            alt="">1.5k</span>
+                                    <span class="flex text-gray-400 text-[15px] gap-1 cursor-pointer"><img
+                                            class="w-[18px] hover:bg-gray-800 hover:rounded-full"
+                                            src="svg/bar_chart.svg" alt="">9.3M</span>
+                                </div>
+                                <div class="righticons flex gap-2">
+                                    <span class="flex text-gray-400 text-[15px] gap-1 cursor-pointer"><img
+                                            class="w-[18px] hover:bg-gray-800 hover:rounded-full" src="svg/bookmark.svg"
+                                            alt=""></span>
+                                    <span class="flex text-gray-400 text-[15px] gap-1 cursor-pointer"><img
+                                            class="w-[18px] hover:bg-gray-800 hover:rounded-full"
+                                            src="svg/ios_share.svg" alt=""></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="line bg-gray-800 h-[1px] w-full my-3"></div>
+
                 </div>
 
             </div>
         </div>
         <div class="third w-[70%] hidden md:block">
-            <div class="search">
-                <input type="text" placeholder="Search"
-                    class="w-[80%] border border-gray-500 bg-black rounded-full px-4 py-1  my-1 mx-5">
-            </div>
-            <div class="whats w-[80%] border border-gray-500 bg-black px-4  rounded-xl my-1 mx-5">
-                <h1 class="font-bold text-xl my-3">Subscribe to Premium</h1>
-                <p class="text-gray-200 my-3">Get rid of ads, see your analytics, boost your replies and unlock 20+
-                    features.
-                </p>
-                <button class="bg-blue-400 rounded-full py-1 px-4 font-bold my-3">Subscribe</button>
-            </div>
-            <div class="item w-[80%] border border-gray-500 bg-black   rounded-xl my-1 mx-5">
-                <h1 class="font-bold text-xl my-3 px-4">Whats happening</h1>
-                <div class="trending_itrem cursor-pointer px-4 py-1 hover:bg-gray-900">
-                    <div class="text-sm text-gray-500 ">Trending in Pakistan</div>
-                    <div class="font-bold text-right ">#تین_ستمبر_ہڑتال</div>
+            <div class="sticky top-0">
+                <div class="search">
+                    <input type="text" placeholder="Search"
+                        class="w-[80%] border border-gray-700 bg-black rounded-full px-4 py-1  my-1 mx-5">
                 </div>
-                <div class="trending_itrem cursor-pointer px-4 py-1 hover:bg-gray-900">
-                    <div class="text-sm text-gray-500 ">Trending in Pakistan</div>
-                    <div class="font-bold text-right ">#گستاخ_اصفہانی_کو_گرفتار_کرو</div>
+                <div class="whats w-[80%] border border-gray-700 bg-black px-4  rounded-xl my-1 mx-5">
+                    <h1 class="font-bold text-xl my-3">Subscribe to Premium</h1>
+                    <p class="text-gray-200 my-3">Get rid of ads, see your analytics, boost your replies and unlock 20+
+                        features.
+                    </p>
+                    <button class="bg-blue-400 rounded-full py-1 px-4 font-bold my-3">Subscribe</button>
                 </div>
-                <div class="trending_itrem cursor-pointer px-4 py-1 hover:bg-gray-900">
-                    <div class="text-sm text-gray-500 ">Trending in Pakistan</div>
-                    <div class="font-bold text-right ">#رازٍ_محبت</div>
+                <div class="item w-[80%] border border-gray-700 bg-black   rounded-xl my-1 mx-5">
+                    <h1 class="font-bold text-xl my-3 px-4">Whats happening</h1>
+                    <div class="trending_itrem cursor-pointer px-4 py-1 hover:bg-gray-900">
+                        <div class="text-sm text-gray-500 ">Trending in Pakistan</div>
+                        <div class="font-bold text-right ">#تین_ستمبر_ہڑتال</div>
+                    </div>
+                    <div class="trending_itrem cursor-pointer px-4 py-1 hover:bg-gray-900">
+                        <div class="text-sm text-gray-500 ">Trending in Pakistan</div>
+                        <div class="font-bold text-right ">#گستاخ_اصفہانی_کو_گرفتار_کرو</div>
+                    </div>
+                    <div class="trending_itrem cursor-pointer px-4 py-1 hover:bg-gray-900">
+                        <div class="text-sm text-gray-500 ">Trending in Pakistan</div>
+                        <div class="font-bold text-right ">#رازٍ_محبت</div>
+                    </div>
+                    <div class="trending_itrem cursor-pointer px-4 py-1 hover:bg-gray-900">
+                        <div class="text-sm text-gray-500 ">Trending in Pakistan</div>
+                        <div class="font-bold text-left ">#leileileakedvideo</div>
+                    </div>
+                    <button class="text-blue-500 py-1 px-4 my-3">Show more</button>
                 </div>
-                <div class="trending_itrem cursor-pointer px-4 py-1 hover:bg-gray-900">
-                    <div class="text-sm text-gray-500 ">Trending in Pakistan</div>
-                    <div class="font-bold text-left ">#leileileakedvideo</div>
-                </div>
-
-                <button class="text-blue-500 py-1 px-4 my-3">Show more</button>
             </div>
 
         </div>

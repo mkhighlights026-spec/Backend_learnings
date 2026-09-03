@@ -1,0 +1,12 @@
+.nav, ul{
+    display: flex;
+}
+
+ul{
+    list-style: none;
+    gap: 15px;
+}
+.nav{
+    background-color: antiquewhite;
+    padding: 30px;
+}
